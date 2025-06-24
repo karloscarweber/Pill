@@ -1,5 +1,7 @@
 {{!-- Sans-serif font is always loaded, because it's the default font for some part of the theme regardless of the settings --}}
 {{> "typography/sans"}}
+{{!-- Anton is always loaded because it's used as special heading text in parts of the theme. We can change that later. --}}
+{{> "typography/anton"}}
 
 {{#match @custom.title_font "Modern sans-serif"}}
     {{#match @custom.body_font "Elegant serif"}}

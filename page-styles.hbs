@@ -1,0 +1,78 @@
+{{!< default}}
+{{!-- The tag above means: insert everything in this file into the body of the default.hbs template --}}
+
+{{#post}}
+
+<main class="gh-main">
+    <article class="gh-article {{post_class}}">
+
+        {{#match @page.show_title_and_feature_image}}
+            <header class="gh-article-header gh-canvas">
+                <h1 class="gh-article-title is-title">{{title}}</h1>
+                {{#if custom_excerpt}}
+                    <p class="gh-article-excerpt is-body">{{custom_excerpt}}</p>
+                {{/if}}
+                {{> "feature-image"}}
+            </header>
+        {{/match}}
+
+        <section class="gh-content gh-canvas is-body">
+            {{content}}
+        </section>
+
+    </article>
+</main>
+
+{{/post}}
+
+
+<div class="design-system-container">
+  <h1>Design System</h1>
+  <p>This is the Pill Theme design system and component library.</p>
+  
+  <hr>
+  <h2>Typography</h2>
+  <p>Font sizes, default spacing, and typefaces available.</p>
+  
+  <div class="design-system-container">
+      <p><strong>Headings</strong></p>
+      <h1>Header 1</h1>
+      <h2>Header 2</h2>
+      <h3>Header 3</h3>
+      <h4>Header 4</h4>
+      <h5>Header 5</h5>
+      
+      <h1 class="font-anton">Header 1</h1>
+      <h2 class="font-anton">Header 2</h2>
+      <h3 class="font-anton">Header 3</h3>
+      <h4 class="font-anton">Header 4</h4>
+      <h5 class="font-anton">Header 5</h5>
+      
+      <hr>
+      
+      <p><strong>paragraphs</strong></p>
+  </div>
+  
+  <p><strong>Content styles</strong></p>
+  <div class="design-system-container">
+    <div class="gh-content">
+      <p><strong>Headings</strong></p>
+      <h1>Header 1</h1>
+      <h2>Header 2</h2>
+      <h3>Header 3</h3>
+      <h4>Header 4</h4>
+      <h5>Header 5</h5>
+      
+      <h1 class="font-anton">Header 1</h1>
+      <h2 class="font-anton">Header 2</h2>
+      <h3 class="font-anton">Header 3</h3>
+      <h4 class="font-anton">Header 4</h4>
+      <h5 class="font-anton">Header 5</h5>
+      
+      <hr>
+      
+      <p><strong>paragraphs</strong></p>
+    </div>
+  </div>
+  
+</div>
