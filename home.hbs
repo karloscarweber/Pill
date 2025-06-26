@@ -1,6 +1,19 @@
 {{!< default}}
 {{!-- The tag above means: insert everything in this file into the body of the default.hbs template --}}
 
+<div class="gh-canvas" style="margin-top:45vh;">
+  <p class="debug">Query the ABOUT page and get the title and body and put it here.</p>
+
+  <p style="font-size:16PX;line-height:20PX;text-align:justify;font-weight:550;">I’m an Artist, Designer, and Engineer. To most people that means I'm a programmer. I'm Bootstrapping a little studio: <a href="https://capsule.graphics">Capsule.Graphics</a>. Rebuilding CAMPING, a Ruby Web Framework. Researching KonaScript, a new programming language. I'm looking for full time work right now building front ends, or making blogs on Ghost. — A long time ago there was a little boy that wanted to be an astronaut. He tried his very best to be one, but nothing ever worked out.
+</p>
+  <br>
+  <br>
+  <p class="font-anton" style="font-size:90px;line-height:90px;text-align:right;">I LOVE THE WEB</p>
+  
+  <!-- <p class="font-anton" style="font-size:80px;line-height:80px;text-align:center;">You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. After the avalanche, it took us a week to climb out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide... and only five made it out. Now we took an oath, that I'm breaking now. We said we'd say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold a candle to man.</p> -->
+  
+</div>
+
 {{> "components/header" headerStyle=@custom.header_style}}
 
 {{#match @custom.header_style "!=" "Highlight"}}
@@ -8,5 +21,3 @@
 {{/match}}
 
 {{> "components/cta"}}
-
-{{> "components/post-list" feed="home" postFeedStyle=@custom.post_feed_style showTitle=true showSidebar=@custom.show_publication_info_sidebar}}
